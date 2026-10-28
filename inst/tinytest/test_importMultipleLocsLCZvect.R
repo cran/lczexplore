@@ -1,0 +1,7 @@
+# library(dplyr)
+# library(sf)
+# library(ggplot2)
+
+ sfList<-importMultipleLocsLCZvect(dirPath = paste0(
+ system.file("extdata", package = "lczexplore"),"/multipleWfs/"),
+ workflowNames = c("osm","bdt","wudapt"), location = c("Arville", "Redon"))
