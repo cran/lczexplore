@@ -1,7 +1,7 @@
 Package: lczexplore
 Title: Imports, Visualizes, Compares and Explores Maps of Local Climate
         Zones
-Version: 0.1.1
+Version: 0.1.2
 Authors@R: person(given = "Matthieu", family = "Gousseff", email =  "matthieu.gousseff@cnrs.fr", role = c("aut", "cre", "cph"), comment = c(affiliation = "Centre National de la Recherche Scientifique, Lab-STICC", ORCID = "0000-0002-7106-2677"))
 Description: Easily import and visualize local climate zone maps with standard encoding.
     Compare two or more maps, and group some LCZ types according to user defined grouping vectors.
@@ -19,10 +19,10 @@ LazyData: true
 Depends: R (>= 4.0.0)
 Config/roxygen2/version: 8.1.0
 NeedsCompilation: no
-Packaged: 2026-10-19 08:44:34 UTC; gousseff
+Packaged: 2026-11-02 11:12:46 UTC; gousseff
 Author: Matthieu Gousseff [aut, cre, cph] (affiliation: Centre National de la
     Recherche Scientifique, Lab-STICC, ORCID:
     <https://orcid.org/0000-0002-7106-2677>)
 Maintainer: Matthieu Gousseff <matthieu.gousseff@cnrs.fr>
 Repository: CRAN
-Date/Publication: 2026-10-28 12:30:02 UTC
+Date/Publication: 2026-11-02 16:40:02 UTC

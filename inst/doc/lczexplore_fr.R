@@ -59,17 +59,8 @@ map6 <- showLCZ(redonOSMgrouped, column = "grouped", repr = "alter", wf = "OSM",
 path <- paste0(system.file("extdata/", package = "lczexplore"), "/redonCompare")
 comparaison <- compareLCZ(sf1 = redonBDT, column1 = "LCZ_PRIMARY", wf1 = "BD TOPO v2.2",
                           sf2 = redonOSM, column2 = "LCZ_PRIMARY", wf2 = "Open Street Map", ref = 1,
-                          repr = "standard", exwrite = FALSE, location = "Redon",
-                          saveG = path)
+                          repr = "standard", exwrite = FALSE, location = "Redon")
 
-
-## ----comparaison-image-jolie, out.width = "680px"-----------------------------
-path <- system.file('extdata/redonCompare.png',package="lczexplore")
-knitr::include_graphics(path, error=FALSE)
-
-
-## ----cleaningpng--------------------------------------------------------------
-file.remove(path)
 
 ## ----valeurs-numeriques, eval = TRUE, echo = TRUE-----------------------------
 comparaison$percAgg
@@ -88,39 +79,23 @@ redonCompare <- compareLCZ(sf1 = redonBDT, wf1 = "bdt", geomID1 = "ID_RSU", colu
 
 
 ## ----comparaison-avec-confiance, echo = TRUE, fig.show="hide"-----------------
-path <- system.file('extdata/redonCompare',package="lczexplore")
 redonCompare <- compareLCZ(sf1 = redonBDT, wf1 = "bdt", geomID1 = "ID_RSU", column1 = "LCZ_PRIMARY",
                            confid1 = "LCZ_UNIQUENESS_VALUE",
                            sf2 = redonOSM, wf2 = "osm", geomID2 = "ID_RSU", column2 = "LCZ_PRIMARY",
-                           confid2 = "LCZ_UNIQUENESS_VALUE", exwrite = FALSE, saveG = path)
+                           confid2 = "LCZ_UNIQUENESS_VALUE", exwrite = FALSE, saveG = "")
 # redonInputSensib<-read.csv()
 
-## ----sortie-jolie, out.width = "680px"----------------------------------------
-path <- system.file('extdata/GeneralUniquenessSensib.png',package="lczexplore")
-knitr::include_graphics(path, error=FALSE)
-
-
-## ----analyse-sensibilite-2, fig.dim = c(12,9), fig.show="hide"----------------
+## ----analyse-sensibilite-2, fig.height = 16, fig.width = 16-------------------
 names(redonCompare$data)
 confidRedon <- confidSensib(inputDf = redonCompare$data, filePath = "", nPoints = 10,
                             wf1 = "bdtopo_2_2", wf2 = "osm",
                             geomID1 = "ID_RSU", column1 = "bdt", confid1 = "LCZ_UNIQUENESS_VALUE",
                             geomID2 = "ID_RSU.1", column2 = "osm", confid2 = "LCZ_UNIQUENESS_VALUE.1",
                             sep = ";", repr = "standard",
-                            plot = TRUE, saveG = system.file("extdata/", package = "lczexplore"))
+                            plot = TRUE, saveG = "")
 
 
-## ----sortie-sensibilite-jolie, out.width = "680px"----------------------------
-path <- paste0(system.file("extdata/GeneralUniquenessSensib",package="lczexplore"), ".png")
-knitr::include_graphics(path, error=FALSE)
-
-
-## ----sensibilite-par-type-de LCZ, out.width = "680px"-------------------------
-path <- paste0(system.file("extdata/byLCZUniquenessSensib", package = "lczexplore"), ".png")
-knitr::include_graphics(path, error = FALSE)
-
-
-## ----cleanup------------------------------------------------------------------
+## ----cleanup, echo = FALSE----------------------------------------------------
 path <- system.file("extdata/byLCZUniquenessSensib.png", package = "lczexplore")
 if (file.exists(path)){file.remove(path)}
 

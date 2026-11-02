@@ -12,7 +12,7 @@
 
 <meta name="author" content="Matthieu Gousseff" />
 
-<meta name="date" content="2026-10-19" />
+<meta name="date" content="2026-11-02" />
 
 <title>Raster_vector_comparison</title>
 
@@ -341,7 +341,7 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 
 <h1 class="title toc-ignore">Raster_vector_comparison</h1>
 <h4 class="author">Matthieu Gousseff</h4>
-<h4 class="date">2026-10-19</h4>
+<h4 class="date">2026-11-02</h4>
 
 
 
@@ -611,18 +611,14 @@ this, using the <code>groupLCZ</code> function.</p>
 <span id="cb11-33"><a href="#cb11-33" tabindex="-1"></a><span class="co">#&gt; they will be coerced to the specified reference (sf1)</span></span>
 <span id="cb11-34"><a href="#cb11-34" tabindex="-1"></a><span class="co">#&gt; Warning: attribute variables are assumed to be spatially constant throughout</span></span>
 <span id="cb11-35"><a href="#cb11-35" tabindex="-1"></a><span class="co">#&gt; all geometries</span></span>
-<span id="cb11-36"><a href="#cb11-36" tabindex="-1"></a><span class="co">#&gt; typeLevels before trying to group are redtypeLevels before trying to group are blacktypeLevels before trying to group are greentypeLevels before trying to group are greytypeLevels before trying to group are burlywoodtypeLevels before trying to group are bluetypeLevels before trying to group are #57f95f</span></span>
-<span id="cb11-37"><a href="#cb11-37" tabindex="-1"></a><span class="co">#&gt; One vector of levels, one vector of colors, either the same length (case 9: and 10:), or colors longer (case 12:, unused colors were dropped),</span></span>
-<span id="cb11-38"><a href="#cb11-38" tabindex="-1"></a><span class="co">#&gt;          reduced to  6: A single vector was provided, whose names don&#39;t cover the levels in the data, </span></span>
-<span id="cb11-39"><a href="#cb11-39" tabindex="-1"></a><span class="co">#&gt;       missing levels were assigned random colors.</span></span>
-<span id="cb11-40"><a href="#cb11-40" tabindex="-1"></a><span class="co">#&gt; As useStandCol is set to TRUE, some of the specified colors may have been over-ridden to use standard colors if standard LCZ values have been detected</span></span>
-<span id="cb11-41"><a href="#cb11-41" tabindex="-1"></a><span class="co">#&gt; standard LCZ types detected, the standard colors will be associated to them: redstandard LCZ types detected, the standard colors will be associated to them: blackstandard LCZ types detected, the standard colors will be associated to them: greenstandard LCZ types detected, the standard colors will be associated to them: greystandard LCZ types detected, the standard colors will be associated to them: burlywoodstandard LCZ types detected, the standard colors will be associated to them: bluestandard LCZ types detected, the standard colors will be associated to them: ghostwhite</span></span>
-<span id="cb11-42"><a href="#cb11-42" tabindex="-1"></a><span class="co">#&gt; typeLevels before trying to group are redtypeLevels before trying to group are blacktypeLevels before trying to group are greentypeLevels before trying to group are greytypeLevels before trying to group are burlywoodtypeLevels before trying to group are bluetypeLevels before trying to group are #5a06c9</span></span>
-<span id="cb11-43"><a href="#cb11-43" tabindex="-1"></a><span class="co">#&gt; One vector of levels, one vector of colors, either the same length (case 9: and 10:), or colors longer (case 12:, unused colors were dropped),</span></span>
-<span id="cb11-44"><a href="#cb11-44" tabindex="-1"></a><span class="co">#&gt;          reduced to  6: A single vector was provided, whose names don&#39;t cover the levels in the data, </span></span>
-<span id="cb11-45"><a href="#cb11-45" tabindex="-1"></a><span class="co">#&gt;       missing levels were assigned random colors.</span></span>
-<span id="cb11-46"><a href="#cb11-46" tabindex="-1"></a><span class="co">#&gt; As useStandCol is set to TRUE, some of the specified colors may have been over-ridden to use standard colors if standard LCZ values have been detected</span></span>
-<span id="cb11-47"><a href="#cb11-47" tabindex="-1"></a><span class="co">#&gt; standard LCZ types detected, the standard colors will be associated to them: redstandard LCZ types detected, the standard colors will be associated to them: blackstandard LCZ types detected, the standard colors will be associated to them: greenstandard LCZ types detected, the standard colors will be associated to them: greystandard LCZ types detected, the standard colors will be associated to them: burlywoodstandard LCZ types detected, the standard colors will be associated to them: bluestandard LCZ types detected, the standard colors will be associated to them: ghostwhite</span></span></code></pre></div>
+<span id="cb11-36"><a href="#cb11-36" tabindex="-1"></a><span class="co">#&gt; typeLevels before trying to group are</span></span>
+<span id="cb11-37"><a href="#cb11-37" tabindex="-1"></a><span class="co">#&gt; redblackgreengreyburlywoodblue#f44eb7</span></span>
+<span id="cb11-38"><a href="#cb11-38" tabindex="-1"></a><span class="co">#&gt; 3: No levels but a color vector which size does not cover the number of levels in the data, missing colors will be picked from a standard palette.</span></span>
+<span id="cb11-39"><a href="#cb11-39" tabindex="-1"></a><span class="co">#&gt; As useStandCol is set to TRUE, some of the specified colors may have been over-ridden to use standard colors if standard LCZ values have been detected</span></span>
+<span id="cb11-40"><a href="#cb11-40" tabindex="-1"></a><span class="co">#&gt; typeLevels before trying to group are</span></span>
+<span id="cb11-41"><a href="#cb11-41" tabindex="-1"></a><span class="co">#&gt; redblackgreengreyburlywoodblue#f9dec0</span></span>
+<span id="cb11-42"><a href="#cb11-42" tabindex="-1"></a><span class="co">#&gt; 3: No levels but a color vector which size does not cover the number of levels in the data, missing colors will be picked from a standard palette.</span></span>
+<span id="cb11-43"><a href="#cb11-43" tabindex="-1"></a><span class="co">#&gt; As useStandCol is set to TRUE, some of the specified colors may have been over-ridden to use standard colors if standard LCZ values have been detected</span></span></code></pre></div>
 <div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" tabindex="-1"></a></span>
 <span id="cb12-2"><a href="#cb12-2" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">&quot;comparisonGroupedR.png&quot;</span>, <span class="at">error=</span><span class="cn">FALSE</span>)</span></code></pre></div>
 <p><img role="img" aria-label src="comparisonGroupedR.png" alt width="680px" /></p>
